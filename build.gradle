@@ -3,8 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-//    ext.appLabelName = null
-//    ext.appID = null
 
     flavorDimensions "default"
 
@@ -14,8 +12,8 @@ android {
         println '|---------------------------\n'
     }
 
-    ext.createProps ={ flavorFileName->
-        def Properties props = new Properties()
+    ext.readPropertiesFile ={ flavorFileName->
+        Properties props = new Properties()
         def propFile = project.file(flavorFileName)
         if (!propFile.canRead()){
             printtt flavorFileName +' not found'
@@ -29,31 +27,29 @@ android {
         }
 
         return props
+    }
 
+    ext.setFlavorProperties={flavor,props ->
+        flavor.buildConfigField("String", "APP_ID", "\"${props['APP_ID']}\"") //MainActivity icerisindeki textViewin degeri buradan ataniyor    //BuildConfig.java classina ,Tipi String, adi APP_ID, degeri flavor_xxx.properties.APP_ID den alinan degisken tanimla
+        flavor.resValue "string", "app_name", props['APP_LABEL']        //Uygulamanin adi buradan ataniyor.Tanimlamasi manifestten yapiliyor
+        flavor.resValue "color", "bg_color" , props['BG_COLOR']         //generated.xml icerisinde strings.xmldeki gibi kullanabilecegimiz string tipinde adi app_name  degeri flavor_xxx.properties.APP_LABEL den alinan string resource tanimla
+
+        ext.printt flavor.getName()
     }
 
 
 
     productFlavors{
-
         earth   { ext.flavorFileName = 'flavor_earth.properties'     }
         mars    { ext.flavorFileName = 'flavor_mars.properties'      }
         mercury { ext.flavorFileName = 'flavor_mercury.properties'   }
         venus   { ext.flavorFileName = 'flavor_venus.properties'     }
-
     }
 
     productFlavors.all { flavor ->
-        def Properties props = createProps(flavor.flavorFileName)
+        Properties props = readPropertiesFile(flavor.flavorFileName)
         if (props !=null){
-
-            flavor.buildConfigField("String", "APP_ID", "\"${props['APP_ID']}\"") //MainActivity icerisindeki textViewin degeri buradan ataniyor
-            //BuildConfig.java classina ,Tipi String, adi APP_ID, degeri flavor_xxx.properties.APP_ID den alinan degisken tanimla
-            resValue "string", "app_name", props['APP_LABEL']   //Uygulamanin adi buradan ataniyor.Tanimlamasi manifestten yapiliyor
-            resValue "color", "bg_color" , props['BG_COLOR']
-            //generated.xml icerisinde strings.xmldeki gibi kullanabilecegimiz string tipinde adi app_name  degeri flavor_xxx.properties.APP_LABEL den alinan string resource tanimla
-
-//            printt flavorFileName + ' ' +appID
+            setFlavorProperties(flavor , props)
         }
     }
 
