@@ -1,3 +1,5 @@
+import java.nio.charset.StandardCharsets
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
@@ -34,7 +36,7 @@ android {
             return null
         }
 
-        props.load(new FileInputStream(propFile))
+        props.load(new InputStreamReader(new FileInputStream(propFile), StandardCharsets.UTF_8));
         if(props ==null){
             println ">> ${flavorFileName} Not Opened"
             return null
