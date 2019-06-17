@@ -4,54 +4,61 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
 
-    flavorDimensions "default"
-
-    ext.printt = { param1->
-        println '|---------------------------'
-        println '| ' + param1
-        println '|---------------------------\n'
+    ext.readVariantsDirectoryAndCreateFlavors ={
+        fileTree("variants").visit { FileVisitDetails details ->
+            if (details.file.name.endsWith('.properties'))
+            {
+                Properties props = readPropertiesFile(details.file.path)
+                if (props !=null && props.containsKey('APP_ID'))
+                {
+                    String flavorName = props['APP_ID']
+                    def newFlavor = productFlavors.create(flavorName)
+                    println("> ${flavorName} -> Flavor Created")
+                    setFlavorProperties(newFlavor , props)
+                }
+                else
+                    println(">> ${details.file.name} -> FLAVOR FORMAT ERROR")
+            }
+            else
+                println(">> ${details.file.name} -> WRONG FILE EXTENSION")
+        }
     }
 
-    ext.readPropertiesFile ={ flavorFileName->
+
+
+    ext.readPropertiesFile ={ flavorFileName ->
         Properties props = new Properties()
         def propFile = project.file(flavorFileName)
         if (!propFile.canRead()){
-            printtt flavorFileName +' not found'
+            println ">> ${flavorFileName} Not Readable"
             return null
         }
 
         props.load(new FileInputStream(propFile))
         if(props ==null){
-            printt flavorFileName +' not opened'
+            println ">> ${flavorFileName} Not Opened"
             return null
         }
 
         return props
     }
 
+
+
+
+
     ext.setFlavorProperties={flavor,props ->
-        flavor.buildConfigField("String", "APP_ID", "\"${props['APP_ID']}\"") //MainActivity icerisindeki textViewin degeri buradan ataniyor    //BuildConfig.java classina ,Tipi String, adi APP_ID, degeri flavor_xxx.properties.APP_ID den alinan degisken tanimla
+        flavor.buildConfigField("String", "APP_ID", "\"${props['APP_ID']}\"")   //APPID flavorların isimleri appIdlerden set ediliyor //MainActivity icerisindeki textViewin degeri buradan ataniyor    //BuildConfig.java classina ,Tipi String, adi APP_ID, degeri flavor_xxx.properties.APP_ID den alinan degisken tanimla
         flavor.resValue "string", "app_name", props['APP_LABEL']        //Uygulamanin adi buradan ataniyor.Tanimlamasi manifestten yapiliyor
         flavor.resValue "color", "bg_color" , props['BG_COLOR']         //generated.xml icerisinde strings.xmldeki gibi kullanabilecegimiz string tipinde adi app_name  degeri flavor_xxx.properties.APP_LABEL den alinan string resource tanimla
 
-        ext.printt flavor.getName()
+        flavor.signingConfig signingConfigs.findByName(flavor.getName()) //Imza dosyalarinin eklenmesi
     }
 
 
 
-    productFlavors{
-        earth   { ext.flavorFileName = 'flavor_earth.properties'     }
-        mars    { ext.flavorFileName = 'flavor_mars.properties'      }
-        mercury { ext.flavorFileName = 'flavor_mercury.properties'   }
-        venus   { ext.flavorFileName = 'flavor_venus.properties'     }
-    }
-
-    productFlavors.all { flavor ->
-        Properties props = readPropertiesFile(flavor.flavorFileName)
-        if (props !=null){
-            setFlavorProperties(flavor , props)
-        }
-    }
+    readVariantsDirectoryAndCreateFlavors()
+    flavorDimensions "default"
 
 
     compileSdkVersion 28
@@ -67,6 +74,21 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        earth {
+            keyAlias 'Alias'
+            keyPassword 'KeyPass'
+            storeFile file('KeyStorePath')
+            storePassword 'StorePass'
+        }
+        mars {
+            keyAlias 'Alias'
+            keyPassword 'KeyPass'
+            storeFile file('KeyStorePath')
+            storePassword 'StorePass'
         }
     }
 }
