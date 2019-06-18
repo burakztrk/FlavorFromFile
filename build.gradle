@@ -4,7 +4,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-android {
+
+task createFlavors{
 
     ext.readVariantsDirectoryAndCreateFlavors ={
         fileTree("variants").visit { FileVisitDetails details ->
@@ -14,7 +15,7 @@ android {
                 if (props !=null && props.containsKey('APP_ID'))
                 {
                     String flavorName = props['APP_ID']
-                    def newFlavor = productFlavors.create(flavorName)
+                    def newFlavor = android.productFlavors.create(flavorName)
                     println("> ${flavorName} -> Flavor Created")
                     setFlavorProperties(newFlavor , props)
                 }
@@ -25,8 +26,6 @@ android {
                 println(">> ${details.file.name} -> WRONG FILE EXTENSION")
         }
     }
-
-
 
     ext.readPropertiesFile ={ flavorFileName ->
         Properties props = new Properties()
@@ -45,21 +44,19 @@ android {
         return props
     }
 
-
-
-
-
     ext.setFlavorProperties={flavor,props ->
         flavor.buildConfigField("String", "APP_ID", "\"${props['APP_ID']}\"")   //APPID flavorların isimleri appIdlerden set ediliyor //MainActivity icerisindeki textViewin degeri buradan ataniyor    //BuildConfig.java classina ,Tipi String, adi APP_ID, degeri flavor_xxx.properties.APP_ID den alinan degisken tanimla
         flavor.resValue "string", "app_name", props['APP_LABEL']        //Uygulamanin adi buradan ataniyor.Tanimlamasi manifestten yapiliyor
         flavor.resValue "color", "bg_color" , props['BG_COLOR']         //generated.xml icerisinde strings.xmldeki gibi kullanabilecegimiz string tipinde adi app_name  degeri flavor_xxx.properties.APP_LABEL den alinan string resource tanimla
 
-        flavor.signingConfig signingConfigs.findByName(flavor.getName()) //Imza dosyalarinin eklenmesi
+        flavor.signingConfig android.signingConfigs.findByName(flavor.getName()) //Imza dosyalarinin eklenmesi
     }
 
-
-
     readVariantsDirectoryAndCreateFlavors()
+}
+
+android {
+
     flavorDimensions "default"
 
 

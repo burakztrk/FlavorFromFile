@@ -8,16 +8,16 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="earthDebug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleEarthDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileEarthDebugSources" />
+        <option name="SELECTED_BUILD_VARIANT" value="mercuryDebug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleMercuryDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileMercuryDebugSources" />
         <afterSyncTasks>
-          <task>generateEarthDebugSources</task>
+          <task>generateMercuryDebugSources</task>
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/build/generated/res/resValues/earth/debug" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/build/generated/res/resValues/mercury/debug" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
@@ -26,20 +26,19 @@
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
         <compilerSettings />
         <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/earthDebug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.3.31/721b62ccbafe51a284ca0d1c5dcfdce8cedd4255/kotlin-android-extensions-runtime-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.31/e652770b6416c6d85934086899ffed3eccd35813/kotlin-stdlib-jdk7-1.3.31.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/4faaa1c2907895b5b5088a9ce1835f1b/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/1d308f00376f139a1af3a149c7492acf/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/dad2007c90a57ab7d2fdec0535cadaa7/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/3ca7aa69fb5539ae06a0566006ffc567/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/c09e5961012cd57f9013d3861cabea83/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/3fbc076c7ff56a87e97a5664390b2a25/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/ef8719c84aa9d0bac764a92a1c03d796/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/bf821edc883b796af3137210442ae7ba/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/acff2175530ae06f83b863813044b758/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/69df19031d47fdddb4ddd93a7d6ebe3d/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/5c4faeac3eead8d0213a050ff98aa06b/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/db26f6da5aa0cf188e4202ad0ba7eaed/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/90798b1a6ece049dca5f049b37a35c01/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/0ff884e9c7df2f23af19ed92aa2a95f9/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/e5f21d7aa351fc39112e328fc4bc5567/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/d59212d4eb4bc11ef404c99530d31b29/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/28e5de1ca3911e5abac76b849e433c09/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/6db153607ba27e8e581ea0337944f2ad/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/62d8022136939f74f939a5e00bce7a36/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/67a929c9a5f83ee42cb3134ddd9d9457/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/85e3dc7bf9ae62513a6b029508737a26/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/d8fc421e656e84db9f13e2a0d5fa1c3a/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/4dca57ecb96a020d5da507afa695c824/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/0df9735359a5a03241e3cd3121bbe297/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/e90f597caa5df5c9e09d2180f99e7b05/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/51290dd8e3c4864b8d42865a46c39f9f/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/9359553edc34c173c2bb3455df264f1f/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/a831ed4f5e2b6e71d94c22fec18c0b6b/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/cf0019e3eb5392ecbf01100f3de4b19e/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.0.2/2f1d597d48e5309e935ce1212eedf5ae69d3f97/annotation-1.0.2.jar:/Users/burakzturk/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/mercuryDebug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.3.31/721b62ccbafe51a284ca0d1c5dcfdce8cedd4255/kotlin-android-extensions-runtime-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.31/e652770b6416c6d85934086899ffed3eccd35813/kotlin-stdlib-jdk7-1.3.31.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/1d308f00376f139a1af3a149c7492acf/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/4faaa1c2907895b5b5088a9ce1835f1b/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/dad2007c90a57ab7d2fdec0535cadaa7/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/3ca7aa69fb5539ae06a0566006ffc567/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/c09e5961012cd57f9013d3861cabea83/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/3fbc076c7ff56a87e97a5664390b2a25/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/ef8719c84aa9d0bac764a92a1c03d796/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/bf821edc883b796af3137210442ae7ba/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/acff2175530ae06f83b863813044b758/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/69df19031d47fdddb4ddd93a7d6ebe3d/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/5c4faeac3eead8d0213a050ff98aa06b/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/db26f6da5aa0cf188e4202ad0ba7eaed/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/90798b1a6ece049dca5f049b37a35c01/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/0ff884e9c7df2f23af19ed92aa2a95f9/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/e5f21d7aa351fc39112e328fc4bc5567/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/d59212d4eb4bc11ef404c99530d31b29/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/28e5de1ca3911e5abac76b849e433c09/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/6db153607ba27e8e581ea0337944f2ad/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/62d8022136939f74f939a5e00bce7a36/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/67a929c9a5f83ee42cb3134ddd9d9457/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/85e3dc7bf9ae62513a6b029508737a26/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/d8fc421e656e84db9f13e2a0d5fa1c3a/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/4dca57ecb96a020d5da507afa695c824/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/0df9735359a5a03241e3cd3121bbe297/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/e90f597caa5df5c9e09d2180f99e7b05/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/51290dd8e3c4864b8d42865a46c39f9f/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/9359553edc34c173c2bb3455df264f1f/jars/classes.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/a831ed4f5e2b6e71d94c22fec18c0b6b/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/Users/burakzturk/.gradle/caches/transforms-2/files-2.1/cf0019e3eb5392ecbf01100f3de4b19e/jars/classes.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/Users/burakzturk/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.0.2/2f1d597d48e5309e935ce1212eedf5ae69d3f97/annotation-1.0.2.jar:/Users/burakzturk/Library/Android/sdk/platforms/android-28/android.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
-          <option name="moduleName" value="app_earthDebug" />
+          <option name="moduleName" value="app_mercuryDebug" />
           <option name="addCompilerBuiltIns" value="true" />
           <option name="loadBuiltInsFromDependencies" value="true" />
-          <option name="languageVersion" value="1.3" />
-          <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">
             <array>
               <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
               <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
               <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+              <option value="plugin:org.jetbrains.kotlin.android:configuration=rO0ABXoAAAG3AAAAAwAIZmVhdHVyZXMAAAABAAV2aWV3cwAHcGFja2FnZQAAAAEAEGNvbS5jb3Jib25lLnRlc3QAB3ZhcmlhbnQAAAAFAEZtYWluOy9Vc2Vycy9idXJha3p0dXJrL0FuZHJvaWRTdHVkaW9Qcm9qZWN0cy9CZW5vVGVzdC9hcHAvc3JjL21haW4vcmVzAEhlYXJ0aDsvVXNlcnMvYnVyYWt6dHVyay9BbmRyb2lkU3R1ZGlvUHJvamVjdHMvQmVub1Rlc3QvYXBwL3NyYy9lYXJ0aC9yZXMARm1hcnM7L1VzZXJzL2J1cmFrenR1cmsvQW5kcm9pZFN0dWRpb1Byb2plY3RzL0Jlbm9UZXN0L2FwcC9zcmMvbWFycy9yZXMATG1lcmN1cnk7L1VzZXJzL2J1cmFrenR1cmsvQW5kcm9pZFN0dWRpb1Byb2plY3RzL0Jlbm9UZXN0L2FwcC9zcmMvbWVyY3VyeS9yZXMASHZlbnVzOy9Vc2Vycy9idXJha3p0dXJrL0FuZHJvaWRTdHVkaW9Qcm9qZWN0cy9CZW5vVGVzdC9hcHAvc3JjL3ZlbnVzL3Jlcw==" />
             </array>
           </option>
           <option name="pluginClasspaths">
@@ -55,65 +54,65 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/build/intermediates/javac/earthDebug/compileEarthDebugJavaWithJavac/classes" />
-    <output-test url="file://$MODULE_DIR$/build/intermediates/javac/earthDebugUnitTest/compileEarthDebugUnitTestJavaWithJavac/classes" />
+    <output url="file://$MODULE_DIR$/build/intermediates/javac/mercuryDebug/compileMercuryDebugJavaWithJavac/classes" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/javac/mercuryDebugUnitTest/compileMercuryDebugUnitTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/earth/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/earthDebug/compileEarthDebugAidl/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/earth/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/earthDebug/compileEarthDebugRenderscript/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/earth/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/earth/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earthDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/earth/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/earthDebugAndroidTest/compileEarthDebugAndroidTestAidl/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/earth/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/earthDebugAndroidTest/compileEarthDebugAndroidTestRenderscript/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/earth/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/earth/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarthDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/earth/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarthDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/earth/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testEarth/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestEarth/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/mercury/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/mercuryDebug/compileMercuryDebugAidl/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/mercury/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/mercuryDebug/compileMercuryDebugRenderscript/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/mercury/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/mercury/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercuryDebug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/mercury/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/mercuryDebugAndroidTest/compileMercuryDebugAndroidTestAidl/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/mercury/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/mercuryDebugAndroidTest/compileMercuryDebugAndroidTestRenderscript/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/mercury/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/mercury/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercuryDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/mercury/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercuryDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/mercury/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestMercury/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testMercury/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />
